@@ -32,7 +32,6 @@ sap.ui.define(
         var sMsg = oBundle.getText("helloMsg", [sRecipient]);
         // show message
         MessageToast.show(sMsg);
-        MessageToast.show(sMsg);
       },
     });
   }
