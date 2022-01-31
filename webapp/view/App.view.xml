@@ -1,0 +1,26 @@
+<mvc:View
+   controllerName="sap.ui.demo.wt.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:l="sap.ui.layout">
+   <Button
+      text="{i18n>showHelloButtonText}"
+      press="onShowHello"/>
+   <Input
+      value="{/recipient/name}"
+      description="Hello {/recipient/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+    <l:VerticalLayout class="sapUiContentPadding" width="100%">
+    <Label text="Enter Amount (required)" labelFor="input-a" />
+	<Input
+        id="input-a"
+		value="1"
+		description="INR"
+		width="250px"
+		fieldWidth="80%"
+		showClearIcon="true"
+		class="sapUiSmallMarginBottom"
+        required="true" />  
+        </l:VerticalLayout>
+</mvc:View>
